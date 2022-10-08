@@ -1,5 +1,36 @@
 .container {
     display: grid;
-    grid-template-columns: 100px 100px 100px;
-    grid-template-rows: 50px 50px;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows: repeat(2, 100px);
+}
+
+.container > div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.first {
+background-color: rgb(127, 255, 131);
+}
+
+.second {
+    background-color:rgb(255, 255, 144);
+}
+
+.third {
+    background-color: aqua;
+}
+
+.forth {
+    background-color: rgb(209, 171, 245);
+}
+
+.fifth {
+    background-color:aquamarine;
+}
+
+.sixth {
+    background-color: rgb(255, 200, 133);
 }
